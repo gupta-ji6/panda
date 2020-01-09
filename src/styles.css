@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/panda-bg.png");
+}
+
+.body-dark {
+  background-color: #222222;
+}
+
+.title {
+  font-family: "Arvo", serif;
+  color: black;
+  font-size: 7vw;
+  text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 0;
+}
+
+.title-dark {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px rgba(221, 221, 221, 1);
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+  padding: 60px;
+  width: 30vw;
+  height: 30vw;
+  background-color: #1a1a1a;
+  box-shadow: 0 2.3px 6.6px rgba(0, 0, 0, 0.034),
+    0 5.5px 15.8px rgba(0, 0, 0, 0.089), 0 10.3px 29.7px rgba(0, 0, 0, 0.146),
+    0 18.3px 52.9px rgba(0, 0, 0, 0.195), 0 34.3px 99px rgba(0, 0, 0, 0.228),
+    0 82px 237px rgba(0, 0, 0, 0.19);
+}
+
+.panda-icon {
+  width: auto;
+  height: 40vw;
+}
+
+.gif {
+  border: 0.1px solid transparent;
+  border-radius: 6px;
+  width: 80vw;
+  height: auto;
+  box-shadow: 0 2.3px 6.6px rgba(255, 255, 255, 0.034),
+    0 5.5px 15.8px rgba(255, 255, 255, 0.089),
+    0 10.3px 29.7px rgba(255, 255, 255, 0.146),
+    0 18.3px 52.9px rgba(255, 255, 255, 0.195),
+    0 34.3px 99px rgba(255, 255, 255, 0.228),
+    0 82px 237px rgba(255, 255, 255, 0.19);
+}
+
+.showBtn {
+  background: #1a1a1a;
+  margin-bottom: 10vh;
+  color: white;
+  width: 60vw;
+  height: 7vh;
+  padding: 5px;
+  border: 1px solid #1a1a1a;
+  border-radius: 5px;
+  font-family: "Arvo", serif;
+  font-weight: bold;
+  font-size: 2.5vh;
+  cursor: pointer;
+}
+
+.showBtn-dark {
+  background-color: rgba(245, 245, 245, 0.9);
+  color: black;
+}
+
+@media (min-width: 768px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .title {
+    font-size: 5vw;
+  }
+
+  .panda-icon {
+    width: auto;
+    height: 30vw;
+  }
+
+  .showBtn {
+    font-size: 3vh;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .title {
+    font-size: 3vw;
+  }
+
+  .circle {
+    height: 35vh;
+    width: 35vh;
+  }
+
+  .panda-icon {
+    width: auto;
+    height: 18vw;
+  }
+
+  .showBtn {
+    font-size: 4vh;
+    width: 30vw;
+  }
+}

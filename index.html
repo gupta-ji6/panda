@@ -6,9 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Panda GIF Generator - Ayush Gupta</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Panda GIF Generator</h1>
+    <h1 class="title">Panda GIF Generator</h1>
+    <div
+      style="height: 80vh;display: flex; justify-content: center; align-items: center;"
+    >
+      <div class="circle">
+        <img class="panda-icon" src="assets/panda-icon.png" alt="panda icon." />
+      </div>
+    </div>
+    <button class="showBtn" onclick="generate()">Show Me Pandas! 🐼</button>
     <script src="src/index.js"></script>
   </body>
 </html>
