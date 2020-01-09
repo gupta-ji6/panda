@@ -83,7 +83,7 @@ body {
 
 footer {
   font-family: "Arvo", serif;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: smaller;
 }
 
@@ -99,6 +99,12 @@ footer a {
 
 .link-dark {
   color: white;
+}
+
+.github {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
