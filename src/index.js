@@ -21,6 +21,9 @@ function generate() {
       document.body.classList.add("body-dark");
       document.querySelector(".title").classList.add("title-dark");
       document.querySelector(".showBtn").classList.add("showBtn-dark");
+      document.querySelector("footer").classList.add("footer-dark");
+      document.querySelector("a").classList.add("link-dark");
+
       clicked = 1;
     });
 }

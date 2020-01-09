@@ -81,6 +81,25 @@ body {
   color: black;
 }
 
+footer {
+  font-family: "Arvo", serif;
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
+footer a {
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+}
+
+.footer-dark {
+  color: white;
+}
+
+.link-dark {
+  color: white;
+}
 @media (min-width: 768px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .title {
