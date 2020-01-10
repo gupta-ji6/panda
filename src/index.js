@@ -7,7 +7,7 @@ const url =
 
 var clicked = 0;
 
-export const generate = () => {
+function generate() {
   fetch(url)
     .then(resp => resp.json()) // Transform the data into json
     .then(function(data) {
