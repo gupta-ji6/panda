@@ -1,0 +1,20 @@
+{
+  "short_name": "Panda",
+  "name": "Panda GIF Generator",
+  "icons": [
+    {
+      "src": "./assets/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?utm_source=yay",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "theme_color": "#1a1a1a"
+}
