@@ -7,13 +7,13 @@ const url =
 
 var clicked = 0;
 
-function generate() {
+export const generate = () => {
   fetch(url)
     .then(resp => resp.json()) // Transform the data into json
     .then(function(data) {
-      randomNum = Math.floor(Math.random() * 50) + 1;
-      pandaGifs = data.results[randomNum].media[0].tinygif.url;
-      if (clicked == 0) {
+      let randomNum = Math.floor(Math.random() * 50) + 1;
+      let pandaGifs = data.results[randomNum].media[0].tinygif.url;
+      if (clicked === 0) {
         document.querySelector(".circle").classList.remove("circle");
       }
       pandaGif.classList.add("gif");
