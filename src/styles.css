@@ -1,3 +1,19 @@
+:root {
+  --bg-color: white;
+  --title-color: black;
+  --title-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  --button-color: white;
+  --button-bg-color: #1a1a1a;
+}
+
+[data-theme="dark"] {
+  --bg-color: #222222;
+  --title-color: rgba(255, 255, 255, 0.8);
+  --title-shadow: 0px 0px 10px rgba(221, 221, 221, 1);
+  --button-color: black;
+  --button-bg-color: rgba(245, 245, 245, 0.9);
+}
+
 body {
   display: flex;
   align-items: center;
@@ -6,25 +22,25 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("../assets/panda-bg.png");
+  background-color: var(--bg-color);
 }
 
-.body-dark {
-  background-color: #222222;
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   font-family: "Arvo", serif;
-  color: black;
+  color: var(--title-color);
   font-size: 7vw;
-  text-shadow: 0px 0px 10px rgba(150, 150, 150, 1);
+  text-shadow: var(--title-shadow);
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 0;
-}
-
-.title-dark {
-  color: rgba(255, 255, 255, 0.8);
-  text-shadow: 0px 0px 10px rgba(221, 221, 221, 1);
+  cursor: pointer;
 }
 
 .circle {
@@ -62,9 +78,9 @@ body {
 }
 
 .showBtn {
-  background: #1a1a1a;
-  margin-bottom: 10vh;
-  color: white;
+  background: var(--button-bg-color);
+  margin-bottom: 6vh;
+  color: var(--button-color);
   width: 60vw;
   height: 7vh;
   padding: 5px;
@@ -74,31 +90,26 @@ body {
   font-weight: bold;
   font-size: 2.5vh;
   cursor: pointer;
+  outline: none;
+  transform: scale(0.95);
 }
 
-.showBtn-dark {
-  background-color: rgba(245, 245, 245, 0.9);
-  color: black;
+.showBtn:hover {
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
 }
 
 footer {
   font-family: "Arvo", serif;
   margin-bottom: 15px;
   font-size: smaller;
+  color: var(--title-color);
 }
 
 footer a {
   font-style: normal;
-  color: black;
+  color: var(--title-color);
   text-decoration: none;
-}
-
-.footer-dark {
-  color: white;
-}
-
-.link-dark {
-  color: white;
 }
 
 .github {
@@ -106,6 +117,12 @@ footer a {
   display: flex;
   justify-content: space-around;
 }
+
+a.btn::after {
+  background-color: var(--button-bg-color) !important;
+  color: var(--button-color) !important;
+}
+
 @media (min-width: 768px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .title {

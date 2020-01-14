@@ -1,29 +1,43 @@
 const pandaGif = document.querySelector(".panda-icon");
+const title = document.querySelector(".title");
+const circle = document.querySelector("#circle");
 
-const url =
-  "https://api.tenor.com/v1/search?tag=" +
-  "panda" +
-  "&key=TJ5HQGN4OV4Z&limit=50";
+const tenorEndpoint =
+  "https://api.tenor.com/v1/search?" +
+  "tag=panda&" +
+  "key=TJ5HQGN4OV4Z&" +
+  "limit=50&" +
+  "media_filter=minimal";
 
-var clicked = 0;
+let pandaGifs;
+let isClicked = false;
 
-function generate() {
-  fetch(url)
-    .then(resp => resp.json()) // Transform the data into json
-    .then(function(data) {
-      let randomNum = Math.floor(Math.random() * 50) + 1;
-      let pandaGifs = data.results[randomNum].media[0].tinygif.url;
-      if (clicked === 0) {
-        document.querySelector(".circle").classList.remove("circle");
-      }
-      pandaGif.classList.add("gif");
-      pandaGif.src = pandaGifs;
-      document.body.classList.add("body-dark");
-      document.querySelector(".title").classList.add("title-dark");
-      document.querySelector(".showBtn").classList.add("showBtn-dark");
-      document.querySelector("footer").classList.add("footer-dark");
-      document.querySelector("a").classList.add("link-dark");
-
-      clicked = 1;
+function fetchGifs() {
+  fetch(tenorEndpoint)
+    .then(resp => resp.json())
+    .then(data => {
+      pandaGifs = data.results;
     });
+}
+
+function goHome() {
+  document.body.setAttribute("data-theme", "light");
+  pandaGif.src = "assets/panda-icon.webp";
+  pandaGif.classList.remove("gif");
+  circle.className = "circle";
+  isClicked = false;
+}
+
+title.addEventListener("click", goHome);
+
+function showGifs() {
+  if (!isClicked) {
+    document.body.setAttribute("data-theme", "dark");
+    circle.classList.remove("circle");
+    pandaGif.classList.add("gif");
+    isClicked = true;
+  }
+  let randomNum = Math.floor(Math.random() * 50);
+  let randomPandaGif = pandaGifs[randomNum].media[0].gif.url;
+  pandaGif.src = randomPandaGif;
 }

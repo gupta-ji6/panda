@@ -68,12 +68,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-theme="light" onload="fetchGifs()">
     <h1 class="title">Panda GIF Generator</h1>
-    <div
-      style="height: 80vh;display: flex; justify-content: center; align-items: center;"
-    >
-      <div class="circle">
+    <div class="container">
+      <div class="circle" id="circle">
         <img
           class="panda-icon"
           src="assets/panda-icon.webp"
@@ -81,7 +79,7 @@
         />
       </div>
     </div>
-    <button class="showBtn" onclick="generate()">Show Me Pandas! 🐼</button>
+    <button class="showBtn" onclick="showGifs()">Show Me Pandas! 🐼</button>
     <footer>
       <div>
         Made with ❤ for Kenny by
@@ -92,7 +90,7 @@
         <a
           class="github-button"
           href="https://github.com/gupta-ji6/panda"
-          data-color-scheme="no-preference: light; light: light; dark: dark;"
+          data-color-scheme="no-preference: dark"
           aria-label="Star gupta-ji6/panda on GitHub"
           >Star on GitHub</a
         >
