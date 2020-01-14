@@ -17,18 +17,18 @@ A dear friend of mine loves Panda. Hence, I decided to make a website which only
 
 ## Website
 
-[Panda GIF Generator]("https://panda-gif.netlify.com/")
+[Panda GIF Generator](https://panda-gif.netlify.com/)
 
 ## Made with
 
-* [Tenor GIF API]("https://tenor.com/gifapi")
-* Hosted on [Netlify]("https://www.netlify.com/")
+* [Tenor GIF API](https://tenor.com/gifapi)
+* Hosted on [Netlify](https://www.netlify.com/)
 * Vanilla JavaScript, HTML5 and CSS3.
 * ☕ and ❤
 
 ## Contributors
 
-Ayush Gupta - [Portfolio]("http://ayushgupta.tech/") | [Twitter](https://twitter.com/_guptaji_) | [LinkedIn](https://www.linkedin.com/in/guptaji6/) | [Medium](https://medium.com/@guptaji) | [Instagram](https://www.instagram.com/_.guptaji._/) | [GitHub](https://github.com/gupta-ji6)
+Ayush Gupta - [Portfolio](http://ayushgupta.tech/) | [Twitter](https://twitter.com/_guptaji_) | [LinkedIn](https://www.linkedin.com/in/guptaji6/) | [Medium](https://medium.com/@guptaji) | [Instagram](https://www.instagram.com/_.guptaji._/) | [GitHub](https://github.com/gupta-ji6)
 
 ## License
 
