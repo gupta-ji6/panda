@@ -7,7 +7,7 @@
 <h3>A Random Panda Gif Generator</h3>
 </div>
 
-![Twitter Follow](https://img.shields.io/twitter/follow/_guptaji_?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/_guptaji_?style=social)](https://twitter.com/intent/follow?screen_name=_guptaji_)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/964b08f8-3819-4843-be1e-af2550d88da1/deploy-status)](https://app.netlify.com/sites/panda-gif/deploys)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
