@@ -43,6 +43,14 @@ body {
   cursor: pointer;
 }
 
+.subtitle {
+  font-family: monospace;
+  margin-top: 5px;
+  color: var(--title-color);
+  text-align: center;
+  font-size: 3vw;
+}
+
 .circle {
   display: flex;
   align-items: center;
@@ -82,7 +90,7 @@ body {
   margin-bottom: 6vh;
   color: var(--button-color);
   width: 60vw;
-  height: 7vh;
+  min-height: 7vh;
   padding: 5px;
   border: 1px solid #1a1a1a;
   border-radius: 5px;
@@ -92,6 +100,7 @@ body {
   cursor: pointer;
   outline: none;
   transform: scale(0.95);
+  overflow-wrap: break-word;
 }
 
 .showBtn:hover {
@@ -104,6 +113,7 @@ footer {
   margin-bottom: 15px;
   font-size: smaller;
   color: var(--title-color);
+  text-align: center;
 }
 
 footer a {
@@ -129,6 +139,10 @@ a.btn::after {
     font-size: 5vw;
   }
 
+  .subtitle {
+    font-size: 2.5vw;
+  }
+
   .panda-icon {
     width: auto;
     height: 30vw;
@@ -142,6 +156,10 @@ a.btn::after {
   /* big landscape tablets, laptops, and desktops */
   .title {
     font-size: 3vw;
+  }
+
+  .subtitle {
+    font-size: 1.5vw;
   }
 
   .circle {
