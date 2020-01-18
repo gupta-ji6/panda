@@ -9,7 +9,7 @@ const tenorEndpoint =
   "limit=50&" +
   "media_filter=minimal";
 
-let pandaGifs;
+let pandaGifs = [];
 let isClicked = false;
 
 function fetchGifs() {
@@ -17,6 +17,7 @@ function fetchGifs() {
     .then(resp => resp.json())
     .then(data => {
       pandaGifs = data.results;
+      arraySize = pandaGifs.length;
     });
 }
 
@@ -37,7 +38,11 @@ function showGifs() {
     pandaGif.classList.add("gif");
     isClicked = true;
   }
-  let randomNum = Math.floor(Math.random() * 50);
+  let randomNum = Math.floor(Math.random() * pandaGifs.length);
   let randomPandaGif = pandaGifs[randomNum].media[0].gif.url;
   pandaGif.src = randomPandaGif;
+  pandaGifs.splice(randomNum, 1);
+  if (pandaGifs.length <= 0) {
+    fetchGifs();
+  }
 }
