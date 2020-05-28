@@ -17,7 +17,7 @@ A dear friend of mine loves Panda. Hence, I decided to make a website which only
 
 ## Website
 
-[Panda GIF Generator](https://panda-gif.netlify.com/)
+[Panda GIF Generator](https://panda.ayushgupta.tech/)
 
 ## Made with
 
