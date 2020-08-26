@@ -26,6 +26,16 @@ A dear friend of mine loves Panda. Hence, I decided to make a website which only
 * Vanilla JavaScript, HTML5 and CSS3.
 * ☕ and ❤
 
+## Contribution Ideas
+
+![dhruv-tweet](https://user-images.githubusercontent.com/21218732/91296629-8cc6e600-e7ba-11ea-9247-01b950fa450e.png)
+
+[@madhruv](https://github.com/maddhruv) suggested to make this GIF Generator generic so that it is able to generate GIF's of numerous animals.
+
+It would be great if you can contribute in implementing this idea.
+
+> Note: The live app is now moved to sub-domain panda.ayushgupta.tech from ayushgupta.tech/panda
+
 ## Contributors
 
 Ayush Gupta - [Portfolio](http://ayushgupta.tech/) | [Twitter](https://twitter.com/_guptaji_) | [LinkedIn](https://www.linkedin.com/in/guptaji6/) | [Medium](https://medium.com/@guptaji) | [Instagram](https://www.instagram.com/_.guptaji._/) | [GitHub](https://github.com/gupta-ji6)
