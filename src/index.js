@@ -4,13 +4,11 @@ const circle = document.querySelector('#circle');
 const showMePandasBtn = document.querySelector('button');
 const small = document.querySelector('small');
 
-const tenorAPIKey = process.env.TENOR_API_KEY;
 const tenorEndpoint =
   'https://api.tenor.com/v1/search?' +
   'tag=panda&' +
-  'key=&'+
-  tenorAPIKey +
-  '&limit=50&' +
+  'key=TJ5HQGN4OV4Z&' +
+  'limit=50&' +
   'media_filter=minimal';
 
 let pandaGifs = [];
