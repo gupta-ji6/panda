@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/gupta-ji6/panda/raw/master/assets/panda-icon.webp" alt="Panda Logo" height="150">
+<img src="panda-icon.webp" alt="Panda Logo" height="150">
 </p>
 
 <div align="center">
