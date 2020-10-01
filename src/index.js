@@ -4,7 +4,7 @@ const circle = document.querySelector('#circle');
 const showMePandasBtn = document.querySelector('button');
 const small = document.querySelector('small');
 
-require('dotenv').config();
+const dotenv = require('dotenv').config();
 
 const TENOR_API_KEY = process.env.TENOR_API_KEY;
 
