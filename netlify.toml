@@ -1,4 +1,4 @@
 [build]
   functions = "functions"
   publish = "public"
-  command = "#"
+  command = "echo 'No build here yet!'"
