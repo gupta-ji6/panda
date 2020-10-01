@@ -4,18 +4,6 @@ const circle = document.querySelector('#circle');
 const showMePandasBtn = document.querySelector('button');
 const small = document.querySelector('small');
 
-const dotenv = require('dotenv').config();
-
-const TENOR_API_KEY = process.env.TENOR_API_KEY;
-
-const tenorEndpoint =
-  'https://api.tenor.com/v1/search?' +
-  'tag=panda&' +
-  'key=' +
-  TENOR_API_KEY +
-  '&limit=50&' +
-  'media_filter=minimal';
-
 let pandaGifs = [];
 let isClicked = false;
 let loading = false;
@@ -23,7 +11,7 @@ let loading = false;
 function fetchGifs() {
   showMePandasBtn.disabled = true;
   loading = true;
-  fetch(tenorEndpoint)
+  fetch('/.netlify/functions/tenor-gif')
     .then((resp) => resp.json())
     .then((data) => {
       showMePandasBtn.disabled = false;
