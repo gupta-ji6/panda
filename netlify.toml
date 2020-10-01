@@ -1,0 +1,7 @@
+[build]
+  functions = "functions"
+  publish = "public"
+  command = "echo 'No build here yet!'"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"
