@@ -16,6 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.2",
-    "qs": "^6.7.0"
+    "qs": "^6.9.7"
   }
 }
